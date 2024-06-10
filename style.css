@@ -239,3 +239,16 @@ nav ul li a {
 .portfolio-title a svg {
     transition: 0.2s ease-in-out;
 }
+
+.portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.portfolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid var(#4C7CFF);
+    padding: 0.4rem 1rem;
+    color: #4C7CFF;
+}
