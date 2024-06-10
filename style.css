@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Buxton Sketch;
+}
+
+h1 h2 h3 h4 h5 h6, strong {
+    color: black ;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+} 
+
+p, span, label, input, textarea, li {
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.btm {
+    padding: 1rem 1.5rem;
+    background: #4C7CFF;
+    border: 1.5px solid var(#4C7CFF);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+/* .btm:hover {
+    box-shadow: rgba( 0, 0, 0, 0.04) 0px 3px 5px;
+} */
+
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #4C7CFF;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #4C7CFF;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
+    gap: 3rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #4C7CFF;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #4C7CFF;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #4C7CFF;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem o 1rem;
+}
+
+.hero-name span {
+    color: #4C7CFF;
+}
+
+.hero-right img {
+    width: 360px;
+    height: 450px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+#services {
+    background-color: #4C7CFF;
+    padding: 25%;
+}
+
+.services .pre-title{
+    margin: 0 auto;
+}
+
+.services-titel {
+    text-align: center;
+}
+
+.services {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 25%;
+}
+
+.services h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.services-icon {
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.services-icon svg {
+    fill: #4C7CFF;
+}
+
+#portfolios {
+    padding: 25px;
+}
+
+.portfolio {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(#4C7CFF);
+}
+
+.portfolio-cover {
+    height: 250px;
+}
+
+.portfolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio h4 {
+    font-weight: 500;
+    font-size: 2.05rem;
+}
+
+.portfolio-title a svg:hover {
+    fill: #4C7CFF;
+}
+
+.portfolio-title a svg {
+    transition: 0.2s ease-in-out;
+}
